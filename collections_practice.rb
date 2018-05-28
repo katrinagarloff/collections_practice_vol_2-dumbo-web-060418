@@ -88,7 +88,11 @@ def find_cool(ar)
 end
 
 def organize_schools(ar)
-  
+  new_hash = {}
+ ar.each do |school_key, loc_val|
+   new_hash[school_key] = loc_val
+ end
+ new_hash
 end
 
 count_elements([{:name => "blake"}, {:name => "blake"}, {:name => "ashley"}])
