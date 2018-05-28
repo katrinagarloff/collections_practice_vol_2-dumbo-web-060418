@@ -81,7 +81,7 @@ def find_cool(ar)
   new_hash = {}
   new_ar = []
   ar.each do |hash_chunk|
-    if hash_chunk.include? "cool"
+    if hash_chunk.has_value? "cool"
       
       
 end
