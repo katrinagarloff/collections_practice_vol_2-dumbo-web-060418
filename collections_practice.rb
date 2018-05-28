@@ -58,7 +58,11 @@ def merge_data(kys, ar)
   new_hash = {}
   
   ar.each do |hash_chunk|
-    
+    hash_chunk.each do |first_key, data|
+      ks.each do |hsh_chnk|
+      if hsh_chnk.value?(first_key)
+        first_key
+      end
 end
 
 count_elements([{:name => "blake"}, {:name => "blake"}, {:name => "ashley"}])
