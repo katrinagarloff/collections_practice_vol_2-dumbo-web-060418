@@ -63,16 +63,16 @@ def merge_data(kys, ar)
       kys.each do |hsh_chnk|
         hsh_chnk.each do |k, v|
           if v == first_key && !(new_hash.include? k)
-            
-          new_ar << (new_hash[k] = first_key)
+            new_hash = {}
+            new_hash[k] = first_key
           data.each do |sec_key, sec_data|
-            new_ar << (new_hash[sec_key] = sec_data)
-            
+            new_hash[sec_key] = sec_data
           end
         end
       end
     end
   end
+  new_ar << new_hash
       end
       new_ar
 end
