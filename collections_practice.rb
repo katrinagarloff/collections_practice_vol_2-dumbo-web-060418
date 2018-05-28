@@ -56,22 +56,24 @@ end
 
 def merge_data(kys, ar)
   new_hash = {}
+  new_ar = []
   
   ar.each do |hash_chunk|
     hash_chunk.each do |first_key, data|
       kys.each do |hsh_chnk|
         hsh_chnk.each do |k, v|
           if v == first_key
-          new_hash = {k => first_key}
+          new_hash[k] = first_key}
           data.each do |sec_key, sec_data|
             new_hash[sec_key] = sec_data
+            new_ar << new_hash
           end
         end
       end
     end
   end
       end
-      new_hash
+      new_ar
 end
 
 count_elements([{:name => "blake"}, {:name => "blake"}, {:name => "ashley"}])
