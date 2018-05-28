@@ -73,7 +73,6 @@ def merge_data(kys, ar)
     end
      new_ar << new_hash
   end
- 
       end
       new_ar
 end
