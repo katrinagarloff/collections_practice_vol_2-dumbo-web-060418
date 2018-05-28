@@ -55,7 +55,7 @@ dup_ar
 end
 
 def merge_data(kys, ar)
-  new_hash = {}
+  #new_hash = {}
   new_ar = []
   
   ar.each do |hash_chunk|
@@ -67,7 +67,6 @@ def merge_data(kys, ar)
           data.each do |sec_key, sec_data|
             new_hash[sec_key] = sec_data
             new_ar << new_hash
-            new_hash.clear
           end
         end
       end
