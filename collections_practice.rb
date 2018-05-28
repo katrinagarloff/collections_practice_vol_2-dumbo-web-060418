@@ -77,8 +77,13 @@ def merge_data(kys, ar)
       new_ar
 end
 
-def find_cool
-  
+def find_cool(ar)
+  new_hash = {}
+  new_ar = []
+  ar.each do |hash_chunk|
+    if hash_chunk.include? "cool"
+      
+      
 end
 
 count_elements([{:name => "blake"}, {:name => "blake"}, {:name => "ashley"}])
