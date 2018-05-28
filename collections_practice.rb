@@ -87,5 +87,9 @@ def find_cool(ar)
   new_ar
 end
 
+def organize_schools(ar)
+  
+end
+
 count_elements([{:name => "blake"}, {:name => "blake"}, {:name => "ashley"}])
 
