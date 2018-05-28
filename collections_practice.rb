@@ -60,8 +60,11 @@ def merge_data(kys, ar)
   ar.each do |hash_chunk|
     hash_chunk.each do |first_key, data|
       ks.each do |hsh_chnk|
-      if hsh_chnk.value?(first_key)
+      if hsh_chnk.has_value?(first_key)
         first_key
+      end
+    end
+  end
       end
 end
 
