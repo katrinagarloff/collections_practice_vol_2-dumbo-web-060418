@@ -77,5 +77,9 @@ def merge_data(kys, ar)
       new_ar
 end
 
+def find_cool
+  
+end
+
 count_elements([{:name => "blake"}, {:name => "blake"}, {:name => "ashley"}])
 
