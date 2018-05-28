@@ -54,11 +54,11 @@ end
 dup_ar
 end
 
-def merge_data(ks, data)
-  combined_ar = []
-  combined_ar = (ks << data).flatten!
+def merge_data(kys, ar)
+  new_hash = {}
   
-#combined_ar.flatten
+  ar.each do |hash_chunk|
+    
 end
 
 count_elements([{:name => "blake"}, {:name => "blake"}, {:name => "ashley"}])
