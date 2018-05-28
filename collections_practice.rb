@@ -85,7 +85,7 @@ def find_cool(ar)
       new_ar << hash_chunk
     end
   end
-  hash_chunk
+  new_ar
       
 end
 
