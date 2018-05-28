@@ -101,5 +101,4 @@ def organize_schools(ar)
  new_hash
 end
 
-count_elements([{:name => "blake"}, {:name => "blake"}, {:name => "ashley"}])
 
