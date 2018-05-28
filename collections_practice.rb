@@ -95,6 +95,7 @@ def organize_schools(ar)
     new_hash[loc_val] = [school_key]
   else
     new_hash[loc_val] << school_key
+  end
   end 
  end
  new_hash
