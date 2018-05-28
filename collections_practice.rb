@@ -91,7 +91,7 @@ def organize_schools(ar)
   new_hash = {}
  ar.each do |school_key, loc_chunk|
   loc_chunk.each do |loc_key, loc_val|
-    new_hash[loc_key] = loc_val
+    new_hash[loc_val] = [] << school_key
   end 
  end
  new_hash
