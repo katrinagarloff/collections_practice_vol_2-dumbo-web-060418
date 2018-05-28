@@ -67,6 +67,7 @@ def merge_data(kys, ar)
           data.each do |sec_key, sec_data|
             new_hash[sec_key] = sec_data
             new_ar << new_hash
+            new_hash.clear
           end
         end
       end
